@@ -1,28 +1,64 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <HeroSection />
+    <WhoWeAre />
+    <OurExpertise />
+    <FullService />
+    <CreateApproach />
+    <WhatPeople />
+    <Contacts />
+    <VisionPassionResult />
+    <FormsInfo />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from '@/components/Header';
+import WhoWeAre from '@/components/WhoWeAre';
+import OurExpertise from '@/components/OurExpertise';
+import FullService from '@/components/FullService';
+import CreateApproach from '@/components/CreateApproach';
+import HeroSection from '@/components/HeroSection';
+import WhatPeople from '@/components/WhatPeople';
+import VisionPassionResult from '@/components/VisionPassionResult';
+import FormsInfo from '@/components/FormsInfo';
+import Footer from '@/components/Footer';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    HeroSection,
+    WhoWeAre,
+    OurExpertise,
+    FullService,
+    CreateApproach,
+    WhatPeople,
+    VisionPassionResult,
+    FormsInfo,
+    Footer,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #000;
+  background-color: #f1f9fe;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 </style>
